@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+        <title>Functionality  ( abstract )</title>
+    </head>
+    <body>
+        <!-- Normal Run Through -->
+        <script>
+       /**
+        * Prints the numbers from 1 to 100. But for multiples of three print the word 
+        * “Making” instead of the number and for the multiples of five print the word 
+        * “Sense”. For numbers which are multiples of both three and five print 
+        * “Making Sense”.
+        */
+        const wordOne = 'Making'
+        const wordTwo = 'Sense'
+
+        for (let i = 1, len = 100; i <= len; i++) {
+            if (i % 3 && i % 5) {
+                document.write(i)
+            } 
+            else {
+                if (i % 5 === 0) {
+                document.write(wordOne, ' ')
+                } 
+                if (i % 3 === 0) {
+                document.write(wordTwo)
+                }
+            }
+
+            document.write('<br>')
+        }
+        </script>
+
+        <!-- Change Words  Run Through -->
+        <script>
+        /**
+        * Prints the numbers from 1 to 100. But for multiples of three print any other
+        * word instead of “Making” and for multiples of 5 print any other word instead 
+        * of “Sense” and for multiples of 3 and 5 print both words.
+        */
+        const wordOne = 'Hello'
+        const wordTwo = 'World'
+
+        for (let i = 1, len = 100; i <= len; i++) {
+            if (i % 3 && i % 5) {
+                document.write(i)
+            } 
+            else {
+                if (i % 5 === 0) {
+                document.write(wordOne, ' ')
+                } 
+                if (i % 3 === 0) {
+                document.write(wordTwo)
+                }
+            }
+
+            document.write('<br>')
+        }
+        </script>
+    </body>
+</html>
